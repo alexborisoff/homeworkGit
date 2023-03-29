@@ -1,0 +1,124 @@
+$titleColor: rgba(231, 36, 36, 1);
+$redColor: #E72424;
+$silverColor: #86878B;
+$grayColor: #333333;
+$ultraBlackColor: #000000;
+$whiteColor: #FFFFFF;
+
+@mixin paragraphStyle($fontFamilyValue, $fontSizeValue, $fontWeightValue) {
+    font-family: $fontFamilyValue;
+    font-size: $fontSizeValue;
+    font-weight: $fontWeightValue;
+}
+
+.title {
+    color: $titleColor;
+    @include paragraphStyle('Roboto', 50px, 400);
+}
+
+p {
+    margin: 10px 0px;
+}
+
+.typography {
+
+    .first_paragraphOpenSans{
+        height: 20px;
+        @include paragraphStyle('Open Sans', 20px, 700);
+    }
+    
+    .second_paragraphOpenSans{
+        @include paragraphStyle('Open Sans', 15px, 500);
+    }    
+    
+    .third_paragraphOpenSans{
+        @include paragraphStyle('Open Sans', 14px, 300);
+    }
+    
+    .fourth_paragraphOpenSans{
+        @include paragraphStyle('Open Sans', 12px, 300);
+    }
+    
+    .first_paragraphRaleway {
+        @include paragraphStyle('Raleway', 36px, 300);
+    }
+    
+    .second_paragraphRaleway {
+        @include paragraphStyle('Raleway', 30px, 300);
+    }
+    
+    .third_paragraphRaleway {
+        @include paragraphStyle('Raleway', 16px, 300);
+    }
+}
+
+%displayFlex {
+    display: flex;
+    gap: 24px;
+}
+
+.circles {
+    @extend %displayFlex;
+}
+
+%circleStyle {
+    border-width: 50px ;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.circles div {
+    @extend %circleStyle;
+}
+
+.redCircle {
+    border-color: $redColor;
+}
+
+.silverCircle {
+    border-color: $silverColor;
+}
+
+.grayCircle {
+    border-color: $grayColor;
+}
+
+.ultraBlackCircle {
+    border-color: $ultraBlackColor;
+}
+
+.icons {
+    @extend %displayFlex;
+    gap: 34px;
+}
+
+%btnDownloadExtension {
+    display: flex;
+    align-items: center;
+    max-width: 100% - 9%;
+    height: 121px;
+    background-color: $grayColor;
+}
+
+.btnDownloadBackground {
+    @extend %btnDownloadExtension;
+    color: $whiteColor;
+}
+
+.btnDownload {
+    border: 1px solid $whiteColor;
+    padding: 11px 26px;
+    margin-left: 24px;
+}
+
+.stylingBackground {
+    @extend %btnDownloadExtension;
+}
+
+.lines {
+    width: 64px;
+    height: 39.5px;
+    border-bottom: 1px solid $titleColor;
+    border-top: 1px solid $whiteColor;
+    margin-left: 32px;
+}

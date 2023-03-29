@@ -1,0 +1,106 @@
+.title {
+  color: rgb(231, 36, 36);
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 400;
+}
+
+p {
+  margin: 10px 0px;
+}
+
+.typography .first_paragraphOpenSans {
+  height: 20px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+}
+.typography .second_paragraphOpenSans {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 500;
+}
+.typography .third_paragraphOpenSans {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+}
+.typography .fourth_paragraphOpenSans {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 300;
+}
+.typography .first_paragraphRaleway {
+  font-family: "Raleway";
+  font-size: 36px;
+  font-weight: 300;
+}
+.typography .second_paragraphRaleway {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 300;
+}
+.typography .third_paragraphRaleway {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.icons, .circles {
+  display: flex;
+  gap: 24px;
+}
+
+.circles div {
+  border-width: 50px;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+.redCircle {
+  border-color: #E72424;
+}
+
+.silverCircle {
+  border-color: #86878B;
+}
+
+.grayCircle {
+  border-color: #333333;
+}
+
+.ultraBlackCircle {
+  border-color: #000000;
+}
+
+.icons {
+  gap: 34px;
+}
+
+.stylingBackground, .btnDownloadBackground {
+  display: flex;
+  align-items: center;
+  max-width: 91%;
+  height: 121px;
+  background-color: #333333;
+}
+
+.btnDownloadBackground {
+  color: #FFFFFF;
+}
+
+.btnDownload {
+  border: 1px solid #FFFFFF;
+  padding: 11px 26px;
+  margin-left: 24px;
+}
+
+.lines {
+  width: 64px;
+  height: 39.5px;
+  border-bottom: 1px solid rgb(231, 36, 36);
+  border-top: 1px solid #FFFFFF;
+  margin-left: 32px;
+}
+
+/*# sourceMappingURL=index.css.map */
