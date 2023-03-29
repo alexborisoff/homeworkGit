@@ -5,7 +5,7 @@ $grayColor: #333333;
 $ultraBlackColor: #000000;
 $whiteColor: #FFFFFF;
 
-@mixin paragraphStyle($fontFamilyValue, $fontSizeValue, $fontWeightValue) {
+@mixin pStyle($fontFamilyValue, $fontSizeValue, $fontWeightValue) {
     font-family: $fontFamilyValue;
     font-size: $fontSizeValue;
     font-weight: $fontWeightValue;
@@ -13,7 +13,7 @@ $whiteColor: #FFFFFF;
 
 .title {
     color: $titleColor;
-    @include paragraphStyle('Roboto', 50px, 400);
+    @include pStyle('Roboto', 50px, 400);
 }
 
 p {
@@ -24,31 +24,31 @@ p {
 
     .first_paragraphOpenSans{
         height: 20px;
-        @include paragraphStyle('Open Sans', 20px, 700);
+        @include pStyle('Open Sans', 20px, 700);
     }
     
     .second_paragraphOpenSans{
-        @include paragraphStyle('Open Sans', 15px, 500);
+        @include pStyle('Open Sans', 15px, 500);
     }    
     
     .third_paragraphOpenSans{
-        @include paragraphStyle('Open Sans', 14px, 300);
+        @include pStyle('Open Sans', 14px, 300);
     }
     
     .fourth_paragraphOpenSans{
-        @include paragraphStyle('Open Sans', 12px, 300);
+        @include pStyle('Open Sans', 12px, 300);
     }
     
     .first_paragraphRaleway {
-        @include paragraphStyle('Raleway', 36px, 300);
+        @include pStyle('Raleway', 36px, 300);
     }
     
     .second_paragraphRaleway {
-        @include paragraphStyle('Raleway', 30px, 300);
+        @include pStyle('Raleway', 30px, 300);
     }
     
     .third_paragraphRaleway {
-        @include paragraphStyle('Raleway', 16px, 300);
+        @include pStyle('Raleway', 16px, 300);
     }
 }
 
